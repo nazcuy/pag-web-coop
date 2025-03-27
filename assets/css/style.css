@@ -1,53 +1,41 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: DinaRemaster, InputMonoNarrow-Bold, InputMonoNarrow-Regular;
-  }
-  
-  /* Barra superior */
-  .barsup {
+
+  .barra_sup {
     background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, botones a la derecha */
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    z-index: 1000; /* Asegura que esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
   
-  /* Logo */
-  .logo img {
+  .logo_barra img {
     height: 70px;
   }
   
-  /* Menú de botones */
-  .menu ul {
+  .menu_barra ul {
     display: flex;
     list-style: none;
+    margin-left: 20px;
   }
   
-  .menu li {
-    margin-left: 20px; /* Espacio entre botones */
-  }
-  
-  .menu a {
+  .menu_barra a {
+    font-family: DinaRemaster;
+    font-size: 16px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
     font-size: 16px;
     padding: 8px 12px;
     border-radius: 4px;
-    transition: background-color 0.3s;
   }
   
-  .menu a:hover {
-    background-color: #f0f0f0; /* Efecto al pasar el mouse */
+  .menu_barra a:hover {
+    background-color: #f0f0f0;
   }
   
   /* Espacio para el contenido (evita que quede detrás de la barra) */
@@ -59,81 +47,75 @@
     min-height: 25vh; /* Mismo alto que la sección hero */
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 40px 20px;
     text-align: left;
   }
   
-  /* Sección Hero (estilo Mozilla) */
-.hero {
+
+.bienvenida {
     background-color: #000000;
     color: white;
-    padding: 80px 60px;
+    padding: 100px 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 60px; /* Compensa la navbar fija */
+    margin-top: 40px;
   }
   
-  .hero-text {
+  .bienvenida-texto {
     max-width: 600px;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
+    font-family: DinaRemaster;
+    font-size: 40px;
     margin-bottom: 20px;
   }
   
-  .hero p {
+  .bienvenida p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     opacity: 0.8;
   }
   
-  .hero-button {
+  .bienvenida-button {
     background-color: #00bfff;
     color: white;
-    padding: 12px 24px;
+    padding: 8px 12px;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
     display: inline-block;
     transition: background-color 0.3s;
   }
   
-  .hero-button:hover {
+  .bienvenida-button:hover {
     background-color: #0080ff;
   }
   
-  .icono-animado img {
+  .logo_principal img {
     width: 200px;
     height: auto;
     opacity: 0.9;
   }
-  
-  /* Responsive: Ajustes para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    
-    .hero-icon {
-      margin-top: 40px;
-    }
-    
-    .hero-icon img {
-      width: 150px;
-    }
+
+  .general {
+    font-family: DinaRemaster;
   }
 
-  .coyun {
-    background-color: rgb(255, 255, 255);
-
+  .general h2 {
+  font-size: 30px;
   }
 
+  .general p {
+    font-size: 20px;
+    }
+
+  .general img {
+    padding: 8px 12px;
+    width: 300px;
+    height: auto;
+  }
 
   footer {
     margin-top: 80px;
@@ -144,7 +126,7 @@
   .icon-footer {
     padding: 0px 0px;
     display: flex;
-    align-items: right;
+    align-items: flex-end;
     justify-content: end;
     margin-top: 60px;
   }
