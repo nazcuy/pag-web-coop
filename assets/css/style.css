@@ -37,11 +37,7 @@
   .menu_barra a:hover {
     background-color: #f0f0f0;
   }
-  
-  main {
-    margin-top: 80px;
-    padding: 20px;
-  }
+
   main section {
     min-height: 25vh;
     display: flex;
@@ -56,23 +52,22 @@
 .bienvenida {
     background-color: #000000;
     color: white;
-    padding: 100px 20px 40px;
+    padding: 100px 80px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
   }
   
   .bienvenida-texto {
     max-width: 600px;
     font-family: DinaRemaster;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 20px;
   }
   
   .bienvenida p {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
     opacity: 0.8;
   }
   
