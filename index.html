@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cooperativa Tecnológica Martín Fierro: reciclamos, reparamos y desarrollamos software."
+    />
+    <title>Cooperativa Tecnológica Martín Fierro</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="icon"
       href="./assets/img/icons/destornillador_color.PNG"
       type="image/png"
     />
-    <title>Cooperativa Tecnológica Martín Fierro</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
+    <!-- Barra superior común a todas las páginas -->
     <header class="barra_sup">
       <div class="logo_barra">
         <img
@@ -24,42 +29,33 @@
       <nav class="menu_barra">
         <ul>
           <li>
-            <a href="/pages/situacion.html" class="nav-link"
-              >La situación en la que estamos</a
-            >
+            <a href="/pages/situacion.html" class="nav-link">La situación</a>
           </li>
           <li>
-            <a href="/pages/serv-tec.html" class="nav-link"
-              >Reparación de productos electrónicos</a
-            >
+            <a href="/pages/serv-tec.html" class="nav-link">Reparación</a>
           </li>
           <li>
-            <a href="/pages/desarrollo.html" class="nav-link"
-              >Desarrollo de software</a
-            >
+            <a href="/pages/desarrollo.html" class="nav-link">Desarrollo</a>
           </li>
           <li><a href="#footer" class="nav-link">¡Contactanos!</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="bienvenida">
-      <div class="bienvenida-texto">
-        <h1 class="titulo-principal">Cooperativa Tecnológica</h1>
-        <h1 class="titulo-principal">Martín Fierro</h1>
-        <p class="eslogan">Transformando residuos en recursos desde 2023.</p>
-        <a href="#coyuntura" class="bienvenida-button">Conocé más</a>
-      </div>
-      <div class="logo_principal">
-        <img
-          src="./assets/img/icons/destornillador_fondonegro.PNG"
-          alt="Ícono Cooperativa"
-          class="logo-main"
-        />
-      </div>
-    </section>
-
     <main>
+      <section class="bienvenida">
+        <div class="bienvenida-texto">
+          <h1 class="titulo-principal">Cooperativa Tecnológica Martín Fierro</h1>
+          <p class="eslogan">Transformando residuos en recursos desde 2023.</p>
+          <a href="#coyuntura" class="bienvenida-button">Conocé más</a>
+        </div>
+        <div class="logo_principal">
+          <img
+            src="./assets/img/icons/destornillador_fondonegro.PNG"
+            alt="Ícono Cooperativa"
+            class="logo-main"
+          />
+        </div>
       <!-- Sección Coyuntura -->
       <section class="coyuntura" id="coyuntura">
         <div class="general">
@@ -127,22 +123,11 @@
           </div>
         </div>
       </section>
-
-      <!-- Sección Talleres -->
-      <section class="talleres" id="talleres">
-        <div class="general">
-          <h2 class="section-title">Talleres de formación técnica</h2>
-          <div class="talleres-lista">
-            <p class="taller-item">Python</p>
-            <p class="taller-item">HTML</p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="footer">
       <div class="general">
-        <h1 class="footer-title">¡Contactanos!</h1>
+        <h2 class="footer-title">¡Contactanos!</h2>
         <p class="footer-subtitle">Nuestras redes sociales</p>
       </div>
       <div class="icon-footer">

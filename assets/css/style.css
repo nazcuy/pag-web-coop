@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
