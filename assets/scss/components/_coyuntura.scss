@@ -1,0 +1,61 @@
+.coyuntura .general {
+  padding: 40px 0;
+}
+
+.coyuntura .contenedor-imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 100px;
+}
+
+.coyuntura .tarjeta-principal {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.coyuntura .tarjeta-principal .tarjeta-img {
+  width: 100%;
+  max-width: 410px;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.coyuntura .tarjeta-principal .tarjeta-titulo {
+  font-size: 24px;
+  margin-bottom: 4px;
+  max-width: 410px;
+}
+
+.coyuntura .tarjeta-principal .tarjeta-texto {
+  font-size: 16px;
+  max-width: 410px;
+}
+
+.coyuntura .tarjetas-secundarias {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.coyuntura .tarjeta-secundaria .tarjeta-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+.coyuntura .tarjeta-secundaria .tarjeta-titulo {
+  font-size: 20px;
+  margin-bottom: 4px;
+  max-width: 400px;
+}
+
+.coyuntura .tarjeta-secundaria .tarjeta-texto {
+  font-size: 14px;
+  max-width: 400px;
+}

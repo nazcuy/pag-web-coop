@@ -8,11 +8,12 @@
 @use 'components/navbar';
 @use 'components/bienvenida';
 @use 'components/buttons';
+@use 'components/coyuntura';
 
 // 3. Abstracts
-@use 'abstracts/mixins';
 @use 'abstracts/variables';
+@use 'abstracts/mixins';
 
 body {
-  font-family: sans-serif;
+  font-family: variables.$font-principal;
 }
