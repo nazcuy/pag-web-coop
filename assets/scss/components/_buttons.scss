@@ -1,0 +1,10 @@
+.bienvenida-button {
+  background-color: $color-primary;
+  color: $color-light;
+  padding: 12px 24px;
+  border-radius: $border-radius;
+  font-weight: bold;
+  font-size: 18px;
+  @include flex-center();
+  @include hover-effect(darken($color-primary, 15%));
+}

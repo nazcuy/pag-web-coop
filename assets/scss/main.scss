@@ -1,0 +1,75 @@
+// main.scss
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'components/header';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'layout/grid';
+@use 'layout/footer';
+
+// Estilos generales
+main {
+  margin-top: $header-height;
+  padding: 20px;
+
+  section {
+    min-height: 25vh;
+    padding: $spacing-medium 20px;
+    @include flex-center(column);
+    text-align: left;
+  }
+}
+
+.bienvenida {
+  background-color: $color-dark;
+  color: $color-light;
+  padding: 100px 20px $spacing-medium;
+  @include flex-center(row);
+  justify-content: space-between;
+  margin-top: $spacing-medium;
+
+  &-texto {
+    max-width: 600px;
+    font-family: $font-special;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+  }
+}
+
+.general {
+  font-family: $font-special;
+
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .barra_sup {
+    height: auto;
+    padding: 10px;
+
+    .menu_barra ul {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+  .bienvenida {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    &-texto {
+      font-size: 32px;
+    }
+  }
+}

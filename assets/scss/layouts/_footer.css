@@ -1,0 +1,24 @@
+footer {
+  margin-top: $spacing-large;
+  padding: 20px;
+  background-color: $color-secondary;
+  @include flex-center(column);
+  min-height: 400px;
+
+  .icon-footer {
+    @include flex-center(row);
+    gap: 25px;
+    margin: $spacing-medium 0;
+
+    img {
+      width: 50px;
+      @include hover-effect();
+    }
+  }
+
+  .texto-final {
+    font-size: 3rem;
+    font-family: $font-special;
+    margin-top: auto;
+  }
+}
