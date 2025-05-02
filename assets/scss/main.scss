@@ -5,7 +5,8 @@
 @use 'layout/footer';
 
 // 2. Components
-@use 'components/header';
+@use 'components/navbar';
+@use 'components/bienvenida';
 @use 'components/buttons';
 
 // 3. Abstracts
