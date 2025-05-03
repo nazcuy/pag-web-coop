@@ -128,13 +128,6 @@
   height: auto;
 }
 
-.button {
-  background-color: blue;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-}
-
 .titulo-coyuntura {
   font-family: "Montserrat", sans-serif;
   color: #1a1a1a;
@@ -211,6 +204,11 @@
   font-size: 14px;
   max-width: 400px;
   font-family: "Open Sans", sans-serif;
+}
+
+.card .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 body {

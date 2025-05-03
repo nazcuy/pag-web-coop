@@ -77,3 +77,8 @@
   max-width: 400px;
   font-family: variables.$font-body;
 }
+
+.card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}

@@ -5,12 +5,10 @@
 // 2. Components
 @use 'components/navbar';
 @use 'components/bienvenida';
-@use 'components/buttons';
 @use 'components/coyuntura';
 
 // 3. Abstracts
 @use 'abstracts/variables';
-@use 'abstracts/mixins';
 
 body {
   font-family: variables.$font-body;
