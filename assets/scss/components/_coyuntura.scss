@@ -1,5 +1,12 @@
 @use '../abstracts/variables';
 
+.titulo-coyuntura {
+  font-family: variables.$font-heading;
+  color: variables.$color-neutral-dark;
+  font-size: 30px;
+  padding: 40px 0 5px 100px;
+}
+
 .coyuntura .general {
   padding: variables.$espacio-md 0;
 }
@@ -7,8 +14,8 @@
 .coyuntura .contenedor-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: variables.$espacio-md;
-  padding: 100px;
+  gap: variables.$espacio-pq;
+  padding: 30px 0 60px 100px;
 }
 
 .coyuntura .tarjeta-principal {
@@ -30,6 +37,7 @@
   font-size: 24px;
   margin-bottom: 4px;
   max-width: 410px;
+  max-height: 500px;
   font-family: variables.$font-heading;
   color: variables.$color-primary;
 }
