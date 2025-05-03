@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 .coyuntura .general {
   padding: 40px 0;
 }
@@ -19,43 +21,49 @@
   width: 100%;
   max-width: 410px;
   height: auto;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  margin-bottom: variables.$espacio-pq;
+  border-radius: variables.$border-radius;
 }
 
 .coyuntura .tarjeta-principal .tarjeta-titulo {
   font-size: 24px;
   margin-bottom: 4px;
   max-width: 410px;
+  font-family: variables.$font-heading;
+  color: variables.$color-primary;
 }
 
 .coyuntura .tarjeta-principal .tarjeta-texto {
   font-size: 16px;
   max-width: 410px;
+  font-family: variables.$font-body;
 }
 
 .coyuntura .tarjetas-secundarias {
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 15px;
+  gap: variables.$espacio-md;
 }
 
 .coyuntura .tarjeta-secundaria .tarjeta-img {
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-bottom: 6px;
-  border-radius: 8px;
+  margin-bottom: variables.$espacio-pq;
+  border-radius: variables.$border-radius;
 }
 
 .coyuntura .tarjeta-secundaria .tarjeta-titulo {
   font-size: 20px;
   margin-bottom: 4px;
   max-width: 400px;
+  font-family: variables.$font-heading;
+  color: variables.$color-primary;
 }
 
 .coyuntura .tarjeta-secundaria .tarjeta-texto {
   font-size: 14px;
   max-width: 400px;
+  font-family: variables.$font-body;
 }

@@ -121,25 +121,28 @@ footer {
   font-size: 24px;
   margin-bottom: 4px;
   max-width: 410px;
+  font-family: "Montserrat", sans-serif;
+  color: #0052cc;
 }
 
 .coyuntura .tarjeta-principal .tarjeta-texto {
   font-size: 16px;
   max-width: 410px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .coyuntura .tarjetas-secundarias {
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 15px;
+  gap: 16px;
 }
 
 .coyuntura .tarjeta-secundaria .tarjeta-img {
   width: 100%;
   max-width: 400px;
   height: auto;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   border-radius: 8px;
 }
 
@@ -147,15 +150,19 @@ footer {
   font-size: 20px;
   margin-bottom: 4px;
   max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  color: #0052cc;
 }
 
 .coyuntura .tarjeta-secundaria .tarjeta-texto {
   font-size: 14px;
   max-width: 400px;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Open Sans", sans-serif;
+  color: #1a1a1a;
 }
 
 /*# sourceMappingURL=style.css.map */

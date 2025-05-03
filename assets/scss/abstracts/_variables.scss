@@ -1,1 +1,19 @@
-$font-principal: 'Roboto';
+// assets/scss/abstracts/_variables.scss
+
+// Tipografías
+$font-body: 'Open Sans', sans-serif; // Fuente para textos de párrafo
+$font-heading: 'Montserrat', sans-serif; // Fuente para títulos y encabezados
+
+// Colores
+$color-primary: #0052cc; // Azul eléctrico, color principal
+$color-accent: #00cc99; // Verde brillante, color de acento/interacciones
+$color-neutral-light: #f5f5f5; // Gris muy claro, fondo secundario
+$color-neutral-dark: #1a1a1a; // Gris casi negro, texto principal / fondo oscuro
+
+// Espaciados
+$espacio-pq: 8px;
+$espacio-md: 16px;
+$espacio-gr: 32px;
+
+// Bordes
+$border-radius: 8px;

@@ -15,5 +15,6 @@
 @use 'abstracts/mixins';
 
 body {
-  font-family: variables.$font-principal;
+  font-family: variables.$font-body;
+  color: variables.$color-neutral-dark;
 }
