@@ -1,4 +1,47 @@
-footer {
-  background-color: #f2f2f2;
-  padding: 1rem;
+@use '../abstracts/variables';
+
+#footer {
+  background-color: variables.$color-footer-bg;
+  color: variables.$color-footer-texto;
+  padding: variables.$espacio-gr 0;
+  text-align: center;
+}
+
+.footer-titulo {
+  font-size: 24px;
+  font-family: variables.$font-heading;
+  margin-bottom: variables.$espacio-pq;
+}
+
+.footer-subtitulo {
+  font-size: 16px;
+  margin-bottom: variables.$espacio-md;
+}
+
+.icono-footer {
+  display: flex;
+  justify-content: center;
+  gap: variables.$espacio-md;
+  margin-bottom: variables.$espacio-md;
+
+  .social-link {
+    display: inline-block;
+
+    .social-icono {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.footer-creditos {
+  font-size: 14px;
+  opacity: 0.9;
+  font-family: variables.$font-body;
 }
