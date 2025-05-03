@@ -1,4 +1,7 @@
 .barra_sup {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -9,6 +12,7 @@
   box-sizing: border-box;
   height: 80px;
   margin: 0;
+  z-index: 1000;
 }
 
 .logo_barra img {
