@@ -131,13 +131,13 @@
 }
 
 .coyuntura .general {
-  padding: 40px 0;
+  padding: 16px 0;
 }
 
 .coyuntura .contenedor-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 16px;
   padding: 100px;
 }
 
@@ -150,7 +150,8 @@
 .coyuntura .tarjeta-principal .tarjeta-img {
   width: 100%;
   max-width: 410px;
-  height: auto;
+  max-height: 500px;
+  object-fit: cover;
   margin-bottom: 8px;
   border-radius: 8px;
 }
@@ -179,8 +180,9 @@
 .coyuntura .tarjeta-secundaria .tarjeta-img {
   width: 100%;
   max-width: 400px;
-  height: auto;
-  margin-bottom: 8px;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 4px;
   border-radius: 8px;
 }
 

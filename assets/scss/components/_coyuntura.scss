@@ -1,13 +1,13 @@
 @use '../abstracts/variables';
 
 .coyuntura .general {
-  padding: 40px 0;
+  padding: variables.$espacio-md 0;
 }
 
 .coyuntura .contenedor-imagenes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: variables.$espacio-md;
   padding: 100px;
 }
 
@@ -20,7 +20,8 @@
 .coyuntura .tarjeta-principal .tarjeta-img {
   width: 100%;
   max-width: 410px;
-  height: auto;
+  max-height: 500px;
+  object-fit: cover;
   margin-bottom: variables.$espacio-pq;
   border-radius: variables.$border-radius;
 }
@@ -49,7 +50,8 @@
 .coyuntura .tarjeta-secundaria .tarjeta-img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  max-height: 200px;
+  object-fit: cover;
   margin-bottom: variables.$espacio-pq;
   border-radius: variables.$border-radius;
 }
