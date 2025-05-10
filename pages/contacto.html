@@ -30,26 +30,21 @@
     </section>
 
     <!-- Formulario de Contacto -->
-    <main class="container my-5">
-      <h1 class="text-primary mb-4">Contáctanos para Desarrollo de Software</h1>
+    <main class="container my-5 formulario-contacto">
+      <h1>Contáctanos para Desarrollo de Software</h1>
       
-      <form class="row g-3 needs-validation" novalidate>
-        <!-- Nombre y Apellido -->
+      <form class="row g-4">
         <div class="col-md-6">
           <label for="nombre" class="form-label">Nombre y Apellido</label>
           <input type="text" class="form-control" id="nombre" required>
-          <div class="invalid-feedback">
-            Por favor ingrese su nombre completo.
-          </div>
+          <div class="invalid-feedback">Por favor ingrese su nombre completo.</div>
         </div>
 
         <!-- Email -->
         <div class="col-md-6">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" required>
-          <div class="invalid-feedback">
-            Por favor ingrese un email válido.
-          </div>
+          <div class="invalid-feedback">Por favor ingrese un email válido.</div>
         </div>
 
         <!-- Teléfono -->
@@ -67,33 +62,27 @@
             <option value="desktop">Aplicaciones de Escritorio</option>
             <option value="mobile">Desarrollo Móvil</option>
           </select>
-          <div class="invalid-feedback">
-            Por favor seleccione un servicio.
-          </div>
+          <div class="invalid-feedback">Por favor seleccione un servicio.</div>
         </div>
 
         <!-- Mensaje -->
         <div class="col-12">
           <label for="mensaje" class="form-label">Mensaje</label>
           <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-          <div class="invalid-feedback">
-            Por favor escriba su consulta o mensaje.
-          </div>
+          <div class="invalid-feedback">Por favor escriba su consulta o mensaje.</div>
         </div>
 
         <!-- Newsletter -->
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="newsletter">
-            <label class="form-check-label" for="newsletter">
-              Deseo suscribirme al newsletter
-            </label>
+            <label class="form-check-label" for="newsletter">Deseo suscribirme al newsletter</label>
           </div>
         </div>
 
         <!-- Botón de Envío -->
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Enviar Consulta</button>
+          <button class="btn-primary" type="submit">Enviar Consulta</button>
         </div>
       </form>
     </main>

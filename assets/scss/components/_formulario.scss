@@ -1,0 +1,52 @@
+@use '../abstracts/variables';
+
+.formulario-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: variables.$espacio-gr 0;
+
+  h1 {
+    font-family: variables.$font-heading;
+    color: #2387da;
+    margin-bottom: variables.$espacio-gr;
+  }
+
+  .form-label {
+    font-weight: 600;
+    color: variables.$color-neutral-dark;
+    margin-bottom: variables.$espacio-pq;
+  }
+
+  .form-control {
+    border: 2px solid lighten(variables.$color-primary, 30%);
+    border-radius: variables.$border-radius;
+    padding: variables.$espacio-pq variables.$espacio-md;
+    
+    &:focus {
+      border-color: variables.$color-primary;
+      box-shadow: 0 0 0 3px rgba(variables.$color-primary, 0.25);
+    }
+  }
+
+  .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.9em;
+  }
+
+  .btn-primary {
+    background-color: variables.$color-primary;
+    border: none;
+    padding: variables.$espacio-md variables.$espacio-gr;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(variables.$color-primary, 10%);
+      transform: translateY(-2px);
+    }
+  }
+
+  .form-check-label {
+    color: variables.$color-neutral-dark;
+  }
+}
