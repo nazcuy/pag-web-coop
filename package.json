@@ -1,0 +1,23 @@
+{
+  "name": "pag-web-coop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazcuy/pag-web-coop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazcuy/pag-web-coop/issues"
+  },
+  "homepage": "https://github.com/nazcuy/pag-web-coop#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
