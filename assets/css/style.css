@@ -71,17 +71,33 @@
 
 .bienvenida {
   display: flex;
-  justify-content: space-between;
+  justify-content: column;
   align-items: center;
   background-color: #000000;
   color: #f5f5f5;
   padding: 60px 10%;
-  gap: 32px;
+  gap: 16px;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .bienvenida {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 32px;
+  }
 }
 
 .bienvenida-texto {
-  max-width: 50%;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .bienvenida-texto {
+    max-width: 50%;
+    text-align: left;
+  }
 }
 
 .titulo-principal {
@@ -102,11 +118,32 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
+  transition: transform 1s ease;
+}
+.bienvenida-button:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 480px) {
+  .bienvenida-button {
+    padding: 12px 24px;
+  }
 }
 
+.logo-principal {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
 .logo-principal img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .logo-principal {
+    max-width: 400px;
+    margin: 0;
+  }
 }
 
 .titulo-coyuntura {

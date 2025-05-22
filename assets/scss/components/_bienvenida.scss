@@ -2,17 +2,31 @@
 
 .bienvenida {
   display: flex;
-  justify-content: space-between;
+  justify-content: column;
   align-items: center;
   background-color: #000000;
   color: variables.$color-neutral-light;
   padding: 60px 10%;
-  gap: variables.$espacio-gr;
+  gap: variables.$espacio-md;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: variables.$espacio-gr;
+  }
 }
 
 .bienvenida-texto {
-  max-width: 50%;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+    text-align: left;
+  }
 }
 
 .titulo-principal {
@@ -23,6 +37,7 @@
 .eslogan {
   font-size: 20px;
   margin-bottom: 32px;
+
 }
 
 .bienvenida-button {
@@ -33,9 +48,30 @@
   text-decoration: none;
   font-weight: bold;
   border-radius: variables.$border-radius;
+  transition: transform 1s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (min-width: 480px) {
+    padding: 12px 24px;
+  }
 }
 
-.logo-principal img {
-  max-width: 100%;
-  height: auto;
+.logo-principal {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 768px) {
+    max-width: 400px;
+    margin: 0;
+  }
 }
