@@ -1,41 +1,25 @@
-.barra_sup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  color: white;
-  box-sizing: border-box;
+.navbar {
+  background-color: #ffffff !important;
   height: 80px;
-  margin: 0;
+  padding: 10px 20px;
   z-index: 1000;
-}
 
-.logo_barra img {
-  width: 60px;
-  height: auto;
-}
+  .navbar-collapse {
+  background-color: #ffffff;
+  padding: 20px;
+  z-index: 1001;
+  }
+  
+  .container-fluid {
+    padding: 0;
+  }
 
-.menu_barra ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
+  .navbar-brand {
+    padding: 0;
+  }
 
-.menu_barra a {
-  color: rgb(136, 136, 136);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.menu_barra a:hover {
-  text-decoration: underline;
+  .logo-nav {
+    width: 60px;
+    height: auto;
+  }
 }
