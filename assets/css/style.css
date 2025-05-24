@@ -169,23 +169,37 @@
     padding: 32px;
   }
 }
-.coyuntura .imagen-container {
+.coyuntura .tarjeta {
+  max-width: 100px;
+  width: 100%;
+  margin: 0 auto 32px;
+}
+.coyuntura .tarjeta .imagen-container {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
 }
-.coyuntura .imagen-container .tarjeta-titulo {
+.coyuntura .tarjeta .imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.coyuntura .tarjeta .tarjeta-contenido {
+  padding-top: 16px;
+  text-align: left;
+}
+.coyuntura .tarjeta .tarjeta-contenido .tarjeta-titulo {
   font-family: "Montserrat", sans-serif;
   color: #0052cc;
   margin: 16px 0;
 }
-.coyuntura .imagen-container .tarjeta-texto {
+.coyuntura .tarjeta .tarjeta-contenido .tarjeta-texto {
   color: #1a1a1a;
   margin-bottom: 16px;
 }
 .coyuntura .object-fit-cover {
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease;
 }
 .coyuntura .object-fit-cover:hover {
   transform: scale(1.05);

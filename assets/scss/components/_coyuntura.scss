@@ -24,31 +24,46 @@
       padding: variables.$espacio-gr;
     }
   }
+  .tarjeta {
+    max-width: 100px;
+    width: 100%;
+    margin: 0 auto variables.$espacio-gr;
 
-  .imagen-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: variables.$border-radius;
-    
+    .imagen-container {
+      position: relative;
+      overflow: hidden;
 
-    .tarjeta-titulo {
-      font-family: variables.$font-heading;
-      color: variables.$color-primary;
-      margin: variables.$espacio-md 0;
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      }
     }
 
-    .tarjeta-texto {
-      color: variables.$color-neutral-dark;
-      margin-bottom: variables.$espacio-md;
+    .tarjeta-contenido {
+      padding-top: variables.$espacio-md;
+      text-align: left;
+
+      .tarjeta-titulo {
+        font-family: variables.$font-heading;
+        color: variables.$color-primary;
+        margin: variables.$espacio-md 0;
+      }
+
+      .tarjeta-texto {
+        color: variables.$color-neutral-dark;
+        margin-bottom: variables.$espacio-md;
+      }
     }
   }
 
-  .object-fit-cover {
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    
-    &:hover {
-      transform: scale(1.05);
+    .object-fit-cover {
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
-}

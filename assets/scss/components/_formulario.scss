@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../abstracts/variables';
 
 .formulario-contacto {
@@ -18,7 +19,7 @@
   }
 
   .form-control {
-    border: 2px solid lighten(variables.$color-primary, 30%);
+    border: 2px solid color.adjust(variables.$color-primary, $lightness: 30%);
     border-radius: variables.$border-radius;
     padding: variables.$espacio-pq variables.$espacio-md;
     
@@ -41,7 +42,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: darken(variables.$color-primary, 10%);
+      background-color: color.adjust(variables.$color-primary, $lightness: -10%);
       transform: translateY(-2px);
     }
   }
