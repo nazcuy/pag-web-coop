@@ -1,84 +1,54 @@
 @use '../abstracts/variables';
 
-.titulo-coyuntura {
-  font-family: variables.$font-heading;
-  color: variables.$color-neutral-dark;
-  font-size: 30px;
-  padding: 40px 0 5px 100px;
-}
-
-.coyuntura .general {
-  padding: variables.$espacio-md 0;
-}
-
-.coyuntura .contenedor-imagenes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: variables.$espacio-pq;
-  padding: 30px 0 60px 100px;
-}
-
-.coyuntura .tarjeta-principal {
-  grid-column: 1 / 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.coyuntura .tarjeta-principal .tarjeta-img {
+.coyuntura {
+  min-height: 100vh;
   width: 100%;
-  max-width: 410px;
-  max-height: 500px;
-  object-fit: cover;
-  margin-bottom: variables.$espacio-pq;
-  border-radius: variables.$border-radius;
-}
-
-.coyuntura .tarjeta-principal .tarjeta-titulo {
-  font-size: 24px;
-  margin-bottom: 4px;
-  max-width: 410px;
-  max-height: 500px;
-  font-family: variables.$font-heading;
-  color: variables.$color-primary;
-}
-
-.coyuntura .tarjeta-principal .tarjeta-texto {
-  font-size: 16px;
-  max-width: 410px;
   font-family: variables.$font-body;
-}
+  padding: variables.$espacio-gr 0;
 
-.coyuntura .tarjetas-secundarias {
-  grid-column: 2 / 3;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: variables.$espacio-md;
-}
+  .container {
+    height: 100%;
+  }
 
-.coyuntura .tarjeta-secundaria .tarjeta-img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 200px;
-  object-fit: cover;
-  margin-bottom: variables.$espacio-pq;
-  border-radius: variables.$border-radius;
-}
+  .contenido-texto {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    h2 {
+      font-family: variables.$font-heading;
+      color: variables.$color-neutral-dark;
+      margin-bottom: variables.$espacio-gr;
+    }
+    
+    @media (min-width: 768px) {
+      padding: variables.$espacio-gr;
+    }
+  }
 
-.coyuntura .tarjeta-secundaria .tarjeta-titulo {
-  font-size: 20px;
-  margin-bottom: 4px;
-  max-width: 400px;
-  font-family: variables.$font-heading;
-  color: variables.$color-primary;
-}
+  .imagen-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: variables.$border-radius;
+    
 
-.coyuntura .tarjeta-secundaria .tarjeta-texto {
-  font-size: 14px;
-  max-width: 400px;
-  font-family: variables.$font-body;
-}
+    .tarjeta-titulo {
+      font-family: variables.$font-heading;
+      color: variables.$color-primary;
+      margin: variables.$espacio-md 0;
+    }
 
-.card .card-img-top {
-  height: 200px;
-  object-fit: cover;
+    .tarjeta-texto {
+      color: variables.$color-neutral-dark;
+      margin-bottom: variables.$espacio-md;
+    }
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }

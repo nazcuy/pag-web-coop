@@ -146,87 +146,49 @@
   }
 }
 
-.titulo-coyuntura {
+.coyuntura {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  padding: 32px 0;
+}
+.coyuntura .container {
+  height: 100%;
+}
+.coyuntura .contenido-texto {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.coyuntura .contenido-texto h2 {
   font-family: "Montserrat", sans-serif;
   color: #1a1a1a;
-  font-size: 30px;
-  padding: 40px 0 5px 100px;
+  margin-bottom: 32px;
 }
-
-.coyuntura .general {
-  padding: 16px 0;
+@media (min-width: 768px) {
+  .coyuntura .contenido-texto {
+    padding: 32px;
+  }
 }
-
-.coyuntura .contenedor-imagenes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  padding: 30px 0 60px 100px;
-}
-
-.coyuntura .tarjeta-principal {
-  grid-column: 1/2;
-  display: flex;
-  flex-direction: column;
-}
-
-.coyuntura .tarjeta-principal .tarjeta-img {
-  width: 100%;
-  max-width: 410px;
-  max-height: 500px;
-  object-fit: cover;
-  margin-bottom: 8px;
+.coyuntura .imagen-container {
+  position: relative;
+  overflow: hidden;
   border-radius: 8px;
 }
-
-.coyuntura .tarjeta-principal .tarjeta-titulo {
-  font-size: 24px;
-  margin-bottom: 4px;
-  max-width: 410px;
-  max-height: 500px;
+.coyuntura .imagen-container .tarjeta-titulo {
   font-family: "Montserrat", sans-serif;
   color: #0052cc;
+  margin: 16px 0;
 }
-
-.coyuntura .tarjeta-principal .tarjeta-texto {
-  font-size: 16px;
-  max-width: 410px;
-  font-family: "Open Sans", sans-serif;
+.coyuntura .imagen-container .tarjeta-texto {
+  color: #1a1a1a;
+  margin-bottom: 16px;
 }
-
-.coyuntura .tarjetas-secundarias {
-  grid-column: 2/3;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 16px;
-}
-
-.coyuntura .tarjeta-secundaria .tarjeta-img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 200px;
+.coyuntura .object-fit-cover {
   object-fit: cover;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
-
-.coyuntura .tarjeta-secundaria .tarjeta-titulo {
-  font-size: 20px;
-  margin-bottom: 4px;
-  max-width: 400px;
-  font-family: "Montserrat", sans-serif;
-  color: #0052cc;
-}
-
-.coyuntura .tarjeta-secundaria .tarjeta-texto {
-  font-size: 14px;
-  max-width: 400px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.card .card-img-top {
-  height: 200px;
-  object-fit: cover;
+.coyuntura .object-fit-cover:hover {
+  transform: scale(1.05);
 }
 
 .formulario-contacto {

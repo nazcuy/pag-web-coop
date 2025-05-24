@@ -42,32 +42,38 @@
       </section>
 
       <!-- Sección Coyuntura -->
-      <section class="coyuntura" id="coyuntura">
-        <div>
-          <h2 class="titulo-coyuntura">LA SITUACIÓN EN LA QUE ESTAMOS</h2>
-            <div class="contenedor-imagenes">
-              <article class="tarjeta-principal">
-                <img src="./assets/img/reparacion_cel_vert.jpg" alt="Problema principal" class="tarjeta-img"/>
-                <h3 class="tarjeta-titulo">Basura electrónica</h3>
-                <p class="tarjeta-texto">Argentina genera +500.000 toneladas anuales de residuos electrónicos, solo el 10% se recicla adecuadamente.</p>
-              </article>
-
-            <div class="tarjetas-secundarias">
-              <article class="tarjeta-secundaria">
-                <img src="./assets/img/reparacion_cel.jpg" alt="Solución técnica" class="tarjeta-img"/>
-                <h3 class="tarjeta-titulo">Reparación responsable</h3>
-                <p class="tarjeta-texto">Extendemos la vida útil de los dispositivos mediante reparación especializada y uso de repuestos reciclados.</p>
-              </article>
-
-              <article class="tarjeta-secundaria">
-                <img src="./assets/img/eco.jpg" alt="Impacto ecológico" class="tarjeta-img"/>
-                <h3 class="tarjeta-titulo">Economía circular</h3>
-                <p class="tarjeta-texto">Recuperamos materiales valiosos como oro, cobre y plásticos para su reutilización industrial.</p>
-              </article>
+      <section class="coyuntura">
+        <div class="container">
+          <div class="row g-2">
+          <!-- Columna de texto -->
+            <div class="col-12 col-md-6 bg-white text-black p-5 d-flex align-items-center">
+              <div class="contenido-texto">
+                <h2 class="mb-4">La situación en la que estamos</h2>
+                  <div class="imagen-container">
+                  <img src="/assets/img/reparacion_cel_vert.jpg" alt="Nota Principal" class="img-fluid object-fit-cover">
+                  <h3 class="tarjeta-titulo">Basura electrónica</h3>
+                  <p class="tarjeta-texto">Argentina genera +500.000 toneladas anuales de residuos electrónicos, solo el 10% se recicla adecuadamente.</p>
+                 </div>
+              </div>
             </div>
+      <!-- Columna de imágenes -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column">
+          <div class="imagen-container">
+            <img src="/assets/img/reparacion_cel.jpg" alt="Nota Secundaria 1" class="img-fluid object-fit-cover">
+            <h3 class="tarjeta-titulo">Reparación responsable</h3>
+            <p class="tarjeta-texto">Extendemos la vida útil de los dispositivos mediante reparación especializada y uso de repuestos reciclados.</p>
+          </div>
+          <div class="imagen-container">
+            <img src="/assets/img/eco.jpg" alt="Nota Secundaria 2" class="img-fluid object-fit-cover">
+            <h3 class="tarjeta-titulo">Economía circular</h3>
+            <p class="tarjeta-texto">Recuperamos materiales valiosos como oro, cobre y plásticos para su reutilización industrial.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer id="footer">
