@@ -138,6 +138,7 @@
   width: 100%;
   height: auto;
   object-fit: contain;
+  animation-duration: 3s;
 }
 @media (min-width: 768px) {
   .logo-principal {
