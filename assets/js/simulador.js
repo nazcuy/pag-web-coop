@@ -107,6 +107,7 @@
             
             console.log("=== RESUMEN DE TU COMPRA ===");
             for (let i = 0; i < carrito.length; i++) {
+                const item = carrito[i];
                 const totalItem = item.producto.precio * item.cantidad;
                 console.log(`${i + 1}. ${item.cantidad} x ${item.producto.nombre} - $${totalItem.toFixed(2)}`);
             };
