@@ -1,25 +1,61 @@
+const ContenedorProductos = document.getElementById('ContenedorProductos');
+const ContenedorItemsCarrito = document.getElementById('ContenedorItemsCarrito');
+const seccionCarrito = document.getElementById('seccionCarrito');
+const subtotalElement = document.getElementById('subtotal');
+const costoEnvioElement = document.getElementById('costoEnvio');
+const totalElement = document.getElementById('total');
+const finalizarCompraBtn = document.getElementById('finalizarCompra');
+const vaciarCarritoBtn = document.getElementById('vaciarCarrito');
+        
+const productos = [
+    { 
+        id: 1, 
+        nombre: "Laptop Reciclada", 
+        precio: 3499.99, 
+        descripcion: "Laptop reciclada con SO Windows 10 y procesador Intel Core i5-1035G1.", 
+        imagen: "../assets/img/laptop.jpg" 
+    },
+    { 
+        id: 2, 
+        nombre: "Smartphone Reacondicionado", 
+        precio: 1999.00, 
+        descripcion: "Smartphone reciclado con SO Android 11.", 
+        imagen: "../assets/img/smartphone.jpg" 
+    },
+    { 
+        id: 3, 
+        nombre: "Tablet Recuperada", 
+        precio: 1259.99, 
+        descripcion: "Tablet reciclada con SO Android 11.", 
+        imagen: "../assets/img/tablet.jpg" 
+    },
+    { 
+        id: 4, 
+        nombre: "Kit Accesorios electrónicos", 
+        precio: 4559.99, 
+        descripcion: "Kit de accesorios electrónicos con 60 componentes de alta calidad para conectar y reparar dispositivos electrónicos.", 
+        imagen: "../assets/img/kit.jpg" 
+    },
+    { 
+        id: 5, 
+        nombre: "Curso Reparación", 
+        precio: 8969.99, 
+        descripcion: "Curso de reparación de dispositivos electrónicos con 10 lecciones y 2 horas de contenido.", 
+        imagen: "../assets/img/curso.jpg" 
+    }
+];
+        
+let carrito = [];
+const COSTO_ENVIO = 5999.99;
+        
+function mostrarProductos() {
+    ContenedorProductos.innerHTML = "";
+    for (let i = 0; i < productos.length; i++) {
+        const producto = productos[i]
+        // Crear tarjeta de producto
 
-        const productos = [
-            { id: 1, nombre: "Laptop Reciclada", precio: 3499.99 },
-            { id: 2, nombre: "Smartphone Reacondicionado", precio: 1999.00 },
-            { id: 3, nombre: "Tablet Recuperada", precio: 1259.99 },
-            { id: 4, nombre: "Kit Herramientas", precio: 4559.99 },
-            { id: 5, nombre: "Curso Reparación", precio: 8969.99 }
-        ];
-        
-        let carrito = [];
-        const COSTO_ENVIO = 5999.99;
-        const inicio = document.getElementById('inicio');
-        const mostrar = document.getElementById('mostrar');
-        const finalizar = document.getElementById('fin');
-        
-        function ingresarDatos() {
-            console.log("=== ESTÁS INICIANDO UNA COMPRA ===");
-            console.log("*** Productos disponibles ***");
-            for (let i = 0; i < productos.length; i++) {
-                const producto = productos[i]
-                console.log(`ID: ${producto.id}: ${producto.nombre} - $${producto.precio}`);
-            };
+        console.log(`ID: ${producto.id}: ${producto.nombre} - $${producto.precio}`);
+    };
             
             const idProducto = prompt("Ingresá el ID del producto que querés comprar:");
             if (idProducto === null) {
