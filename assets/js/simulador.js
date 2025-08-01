@@ -100,6 +100,19 @@ function mostrarProductos() {
   });
 }
 
+function mostrarAlerta(titulo, mensaje, icono = 'success') {
+  Swal.fire({
+    title: titulo,
+    text: mensaje,
+    icon: icono,
+    confirmButtonText: 'Aceptar',
+    customClass: {
+      popup: 'alerta-cooperativa',
+      confirmButton: 'btn-alerta-cooperativa'
+    }
+  });
+}
+
 function agregarAlCarrito(event) {
   const id = parseInt(event.target.dataset.id);
   const cantidadInput = document.getElementById(`cantidad-${id}`);
@@ -126,7 +139,11 @@ function agregarAlCarrito(event) {
   
   seccionCarrito.classList.remove('d-none');
   cantidadInput.value = 1;
-  alert(`¡${cantidad} ${producto.nombre} agregado(s) al carrito!`);
+  mostrarAlerta(
+    '¡Producto agregado!', 
+    `Agregaste ${cantidad} ${producto.nombre} al carrito`,
+    'success'
+  );
 }
 
 function actualizarCarrito() {
@@ -236,16 +253,16 @@ function vaciarCarrito() {
 }
 
 function finalizarCompra() {
-  if (carrito.length === 0) {
-    alert('Tu carrito está vacío. Agrega productos antes de finalizar.');
-    return;
-  }
   let subtotal = 0;
   for (let i = 0; i < carrito.length; i++) {
     subtotal += carrito[i].precio * carrito[i].cantidad;
   }
   const total = subtotal + COSTO_ENVIO;
-  alert(`¡Compra finalizada con éxito!\n\nTotal: $${total.toFixed(2)}\n\nGracias por confiar en la cooperativa.`);
+  mostrarAlerta(
+    '¡Compra exitosa!', 
+    `Gracias por confiar en la cooperativa!\n\nTotal: $${total.toFixed(2)}`,
+    'success'
+  );
   vaciarCarrito();
 }
 
