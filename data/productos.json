@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "nombre": "Laptop Reciclada",
+      "precio": 3499.99,
+      "descripcion": "Laptop renovada con garantía de 6 meses y 12 meses de garantía de fábrica.",
+      "imagen": "../assets/img/laptop.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Smartphone Reacondicionado",
+      "precio": 1999.00,
+      "descripcion": "Smartphone completamente funcional con nueva batería. ",
+      "imagen": "../assets/img/smartphone.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Tablet Recuperada",
+      "precio": 1259.99,
+      "descripcion": "Tablet restaurada con pantalla nueva. 64MP de cámara. 5000mAh de batería.",
+      "imagen": "../assets/img/tablet.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Celular Reciclado",
+      "precio": 1899.99,
+      "descripcion": "Celular reciclado con SO Android 10. 128GB de almacenamiento. 8GB de RAM.",
+      "imagen": "../assets/img/celular.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Kit Accesorios electrónicos",
+      "precio": 4559.99,
+      "descripcion": "Kit de accesorios electrónicos con 60 componentes de alta calidad para conectar y reparar dispositivos electrónicos.",
+      "imagen": "../assets/img/kit.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Curso Reparación",
+      "precio": 8969.99,
+      "descripcion": "Curso de reparación de dispositivos electrónicos con 10 lecciones y 2 horas de contenido. 100% online. 100% práctico. 100% accesible.",
+      "imagen": "../assets/img/curso.jpg"
+    }
+  ]

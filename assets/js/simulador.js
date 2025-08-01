@@ -7,53 +7,57 @@ const totalElement = document.getElementById('total');
 const finalizarCompraBtn = document.getElementById('finalizarCompra');
 const vaciarCarritoBtn = document.getElementById('vaciarCarrito');
         
-const productos = [
-    { 
-        id: 1, 
-        nombre: "Laptop Reciclada", 
-        precio: 3499.99, 
-        descripcion: "Laptop reciclada con SO Windows 10 y procesador Intel Core i5-1035G1.", 
-        imagen: "../assets/img/laptop.jpg" 
-    },
-    { 
-        id: 2, 
-        nombre: "Smartphone Reacondicionado", 
-        precio: 2000.00, 
-        descripcion: "Smartphone reciclado con SO Android 11.", 
-        imagen: "../assets/img/smartphone.jpg" 
-    },
-    { 
-        id: 3, 
-        nombre: "Tablet Recuperada", 
-        precio: 1300.00, 
-        descripcion: "Tablet reciclada con SO Android 11.", 
-        imagen: "../assets/img/tablet.jpg" 
-    },
-    { 
-        id: 4, 
-        nombre: "Celular Reciclado", 
-        precio: 1899.99, 
-        descripcion: "Celular reciclado con SO Android 10.", 
-        imagen: "../assets/img/celular.jpg" 
-    },
-    { 
-        id: 5, 
-        nombre: "Kit Accesorios electrónicos", 
-        precio: 4559.99, 
-        descripcion: "Kit de accesorios electrónicos con 60 componentes de alta calidad para conectar y reparar dispositivos electrónicos.", 
-        imagen: "../assets/img/kit.jpg" 
-    },
-    { 
-        id: 6, 
-        nombre: "Curso Reparación", 
-        precio: 8969.99, 
-        descripcion: "Curso de reparación de dispositivos electrónicos con 10 lecciones y 2 horas de contenido.", 
-        imagen: "../assets/img/curso.jpg" 
-    }
-];
-        
+let productos = [];
 let carrito = [];
 const COSTO_ENVIO = 5999.99;
+
+async function cargarProductos() {
+  try {
+    const response = await fetch('../../data/productos.json');
+    
+    if (!response.ok) {
+      throw new Error(`Error HTTP! estado: ${response.status}`);
+    }
+    
+    productos = await response.json();
+    mostrarProductos();
+    
+  } catch (error) {
+    Swal.fire({
+      title: 'Error al cargar productos',
+      html: `
+        <div class="text-center">
+          <i class="bi bi-exclamation-triangle text-danger fs-1 mb-3"></i>
+          <p>${error.message}</p>
+          <p class="small mt-3">No se pudieron cargar los productos disponibles</p>
+        </div>
+      `,
+      confirmButtonText: 'Reintentar',
+      showCancelButton: true,
+      cancelButtonText: 'Continuar sin productos',
+      customClass: {
+        popup: 'alerta-cooperativa',
+        confirmButton: 'btn-alerta-cooperativa'
+      },
+      allowOutsideClick: false
+    }).then((result) => {
+      if (result.isConfirmed) {
+        cargarProductos();
+      } else {
+        mostrarProductos(); 
+      }
+    });
+  }
+}
+
+function init() {
+  cargarProductos();
+  cargarCarrito();
+  finalizarCompraBtn.addEventListener('click', finalizarCompra);
+  vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+}
+
+document.addEventListener('DOMContentLoaded', init);
 
 function mostrarProductos() {
   ContenedorProductos.innerHTML = '';
